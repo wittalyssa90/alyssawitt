@@ -7,17 +7,32 @@
     <style>
         body {
                  
-            background-image: url('IMG_4321.jpg'); 
-    	    background-size: cover;  /* Scales image to fit */
-    	    background-position: center; /* Centers the image */
-    	    background-repeat: no-repeat; /* Prevents repetition */
-            height: auto;
-            min-height: 100vh;
+            .background-image {
+                background-image: url('IMG_4321.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 100vh;
+                width: 100%;
+                position: relative; 
+            }
+
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+}
         }
     </style>
 </head>
 <body>
-    
+    <div class="background-image">
+    <p class="sr-only">Alyssa and her cat Sabrina, a tortiseshell cat</p>
+</div>
 
     <nav>
             <ul>
